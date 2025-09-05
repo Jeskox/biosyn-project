@@ -76,4 +76,5 @@ footer { background-color: var(--primary-color); color: #ccc; padding: 60px 0 20
 /* 2. Añade espacio encima del botón del chatbot para que "respire" */
 .chat-cta-block .btn {
     margin-top: 25px; /* Añade un margen superior al botón */
+
 }
