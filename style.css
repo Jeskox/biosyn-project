@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #006837; 
+    --secondary-color: #f7f9f8; 
+    --accent-color: #8DC63F;
+    --text-color: #333; 
+    --light-text-color: #fff; 
+    --border-color: #e0e0e0;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Lato', sans-serif; color: var(--text-color); line-height: 1.7; overflow-x: hidden; }
+h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; font-weight: 600; color: var(--primary-color); }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+section { padding: 100px 0; }
+.top-bar { background-color: var(--secondary-color); padding: 8px 0; font-size: 0.9em; border-bottom: 1px solid var(--border-color); }
+.top-bar .container { display: flex; justify-content: space-between; align-items: center; }
+.top-bar a { color: var(--primary-color); text-decoration: none; font-weight: bold; }
+.main-header { background-color: #fff; padding: 20px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.main-header .container { display: flex; justify-content: space-between; align-items: center; }
+.logo img { height: 60px; vertical-align: middle; }
+.main-nav ul { list-style: none; display: flex; flex-wrap: wrap; }
+.main-nav li { margin-left: 18px; }
+.main-nav a { text-decoration: none; color: var(--primary-color); font-weight: 600; padding: 5px; font-size: 0.95em; border-bottom: 2px solid transparent; transition: color 0.3s, border-bottom 0.3s;}
+.main-nav a:hover, .main-nav a.active { color: var(--accent-color); border-bottom: 2px solid var(--accent-color); }
+.hamburger-menu { display: none; }
+.mobile-nav-header { display: none; }
+#hero { background-image: linear-gradient(rgba(0, 104, 55, 0.8), rgba(0, 104, 55, 0.8)), url('hero-background.jpg'); background-size: cover; background-position: center; color: var(--light-text-color); text-align: center; padding: 140px 20px; }
+#hero h1 { font-size: 3.2em; color: var(--light-text-color); margin-bottom: 20px; }
+#hero p { font-size: 1.2em; max-width: 600px; margin: 0 auto 30px; }
+.btn { display: inline-block; padding: 12px 28px; background-color: var(--accent-color); color: var(--light-text-color); text-decoration: none; border-radius: 50px; font-weight: bold; transition: background-color 0.3s, transform 0.3s; text-transform: uppercase; letter-spacing: 0.5px; }
+.btn:hover { background-color: #7baf34; transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+.page-header { padding: 80px 0; background-color: var(--secondary-color); text-align: center; }
+.page-header h1 { font-size: 2.8em; }
+.banner-section { padding: 0; line-height: 0; }
+.banner-section img { width: 100%; height: 300px; object-fit: cover; }
+.features { background-color: var(--secondary-color); } .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; text-align: center; } .feature-item i { font-size: 3em; color: var(--accent-color); margin-bottom: 15px; } .feature-item h3 { margin-bottom: 10px; } .section-title { text-align: center; margin-bottom: 60px; } .section-title h2 { font-size: 2.5em; } .section-title p { max-width: 700px; margin: 10px auto 0; color: #555; } .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; } .service-card { border: 1px solid var(--border-color); border-top: 5px solid var(--primary-color); border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column;} .service-card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); } .service-card-content { padding: 25px; flex-grow: 1; } .service-card h3 { margin-bottom: 15px; } 
+.about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; align-items: center; }
+.about-image img { width: 100%; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+footer { background-color: var(--primary-color); color: #ccc; padding: 60px 0 20px; } .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; } .footer-grid h4 { color: var(--light-text-color); margin-bottom: 15px; } .footer-grid p { color: #ddd; } .footer-grid ul { list-style: none; } .footer-grid a { color: #ddd; text-decoration: none; transition: color 0.3s; line-height: 2; } .footer-grid a:hover { color: var(--accent-color); } .footer-bottom { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #2a7d52; font-size: 0.9em; }
+.testimonial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; } .testimonial-card { background-color: #fff; padding: 25px; border-radius: 8px; border-left: 5px solid var(--accent-color); box-shadow: 0 4px 15px rgba(0,0,0,0.07); } .testimonial-card blockquote { font-style: italic; color: #555; margin-bottom: 15px; border: none; padding: 0;} .testimonial-card p { font-weight: bold; color: var(--primary-color); text-align: right; }
+#faq .faq-item { margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; } #faq .faq-item:last-child { border-bottom: none; }
+#precios .payment-methods { background-color: var(--secondary-color); padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.07); margin-top: 30px; text-align: center; } .bcp-details { background-color: #fff; padding: 20px; border-radius: 5px; margin-top: 15px; border: 1px solid var(--border-color); }
+.requisitos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: flex-start; }
+.requisitos-grid ul { list-style-position: inside; padding-left: 0; }
+.contact-page-wrapper { max-width: 800px; margin: 0 auto; }
+.chat-cta-block { background-color: var(--secondary-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 30px; text-align: center; margin-bottom: 40px; }
+.chat-cta-block h3 { margin-bottom: 15px; font-size: 1.5em; }
+.form-separator { text-align: center; margin: 50px 0; color: #777; font-weight: bold; }
+.modern-form .form-group { margin-bottom: 25px; }
+.modern-form label { display: block; margin-bottom: 8px; font-weight: bold; color: #555; }
+.modern-form input[type="text"], .modern-form input[type="tel"], .modern-form input[type="email"], .modern-form textarea { width: 100%; padding: 15px; border: 1px solid var(--border-color); border-radius: 5px; font-size: 1em; font-family: 'Lato', sans-serif; transition: border-color 0.3s, box-shadow 0.3s; }
+.modern-form input:focus, .modern-form textarea:focus { outline: none; border-color: var(--primary-color); box-shadow: 0 0 8px rgba(0, 104, 55, 0.2); }
+.btn-full { width: 100%; padding: 15px; font-size: 1.1em; display: flex; justify-content: center; align-items: center; }
+.btn-full i { margin-right: 10px; }
+.direct-contact-info { margin-top: 60px; text-align: center; border-top: 1px solid var(--border-color); padding-top: 40px; }
+.contact-info-item { display: flex; align-items: flex-start; margin-bottom: 25px; justify-content: center; text-align: left;} .contact-info-item i { font-size: 1.5em; color: var(--accent-color); margin-right: 15px; margin-top: 5px; width: 25px; text-align: center; }
+.whatsapp-link { text-decoration: none; color: var(--primary-color); font-weight: bold; transition: color 0.3s; }
+.whatsapp-link:hover { color: var(--accent-color); }
+.whatsapp-link i.fab.fa-whatsapp { color: #25D366; font-size: 1.2em; vertical-align: middle; margin-right: 5px; }
+
+/* --- ACREDITACIONES (Diseño Responsivo Mejorado) --- */
+.accreditations { background-color: var(--secondary-color); }
+.accreditations-logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px; margin-top: 40px; }
+.accreditation-logo { flex: 1 1 120px; max-width: 150px; }
+.accreditation-logo img { width: 100%; height: auto; object-fit: contain; }
+
+@media (max-width: 992px) { .main-nav li { margin-left: 10px; } .main-nav a { font-size: 0.85em; } }
+@media (max-width: 768px) { .top-bar { display: none; } .main-header { padding: 15px 0; background-color: #fff; } .logo img { height: 42px; } .hamburger-menu { display: block; cursor: pointer; font-size: 1.6em; color: var(--primary-color); } .main-nav { display: none; flex-direction: column; width: 100%; background-color: #fff; position: fixed; top: 73px; left: 0; height: calc(100vh - 73px); box-shadow: 0 5px 10px rgba(0,0,0,0.1); padding: 20px 0; overflow-y: auto; } .main-nav.active { display: flex; } .main-nav li { margin: 0; width: 100%; } .main-nav a { display: block; padding: 15px 20px; text-align: center; border-bottom: 1px solid #f0f0f0; font-size: 1em;} .main-nav a:hover, .main-nav a.active { border-bottom: 1px solid #f0f0f0; background-color: var(--secondary-color); } .mobile-nav-header { display: block; padding: 0 20px 20px 20px; border-bottom: 1px solid var(--border-color); font-size: 0.9em; text-align: center; } .mobile-nav-header a { font-weight: bold; text-decoration: none; color: var(--primary-color); } .mobile-nav-header div { margin-bottom: 10px; } section { padding: 60px 0; } #hero { padding: 80px 20px; } #hero h1 { font-size: 2.2em; } #hero p { font-size: 1.1em; } .section-title h2, .page-header h1 { font-size: 2em; } .about-grid, .testimonial-grid, .requisitos-grid { grid-template-columns: 1fr; } .about-image { order: -1; margin-bottom: 30px; } .contact-grid { grid-template-columns: 1fr; } }
+/* --- REFINAMIENTOS DE DISEÑO: Página de Contacto --- */
+
+/* 1. Reduce el espacio entre el título y el contenido en la página de contacto */
+.contact-page-content {
+    padding-top: 40px; /* Reduce el padding superior de 100px a 40px */
+}
+
+/* 2. Añade espacio encima del botón del chatbot para que "respire" */
+.chat-cta-block .btn {
+    margin-top: 25px; /* Añade un margen superior al botón */
+}

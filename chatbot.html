@@ -1,0 +1,22 @@
+<div id="chat-launcher">
+    <i class="fas fa-comments"></i>
+</div>
+
+<div id="chat-window" class="hidden">
+    <div class="chat-header">
+        <h3>Asistente Virtual</h3>
+        <button id="chat-close-btn">&times;</button>
+    </div>
+    <div id="chat-messages">
+        <!-- Los mensajes se añadirán aquí con JavaScript -->
+    </div>
+    <div id="chat-typing-indicator" style="display: none;">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <form id="chat-form">
+        <input type="text" id="chat-input" placeholder="Escribe tu mensaje..." autocomplete="off" required>
+        <button type="submit" id="send-btn"><i class="fas fa-paper-plane"></i></button>
+    </form>
+</div>
